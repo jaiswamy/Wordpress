@@ -1,0 +1,4 @@
+[12-May-2020 21:36:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/hiideals/public_html/udyan.co/wp-content/plugins/hello.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/hiideals/public_html/udyan.co/wp-content/plugins/hello.php on line 59

@@ -1,0 +1,1 @@
+[21-Jul-2019 03:15:15 UTC] PHP Fatal error:  Class 'WPSEO_Abstract_Role_Manager' not found in /home/hitpl14/public_html/udyan.co/wp-content/plugins/wordpress-seo/admin/roles/class-role-manager-vip.php on line 11
