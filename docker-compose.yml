@@ -6,7 +6,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./src:/var/www/html
+      - ./Wordpress:/var/www/html
     depends_on:
       - db
 
@@ -14,10 +14,10 @@ services:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: your_db
-      MYSQL_USER: your_user
-      MYSQL_PASSWORD: your_password
+      MYSQL_ROOT_PASSWORD: mysql123
+      MYSQL_DATABASE: u499940289_SiTaRa
+      MYSQL_USER: u499940289_SiTaRa
+      MYSQL_PASSWORD: Sitara@123
     volumes:
       - db_data:/var/lib/mysql
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
