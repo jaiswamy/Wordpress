@@ -16,7 +16,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: mysql123
       MYSQL_DATABASE: u499940289_SiTaRa
-      MYSQL_USER: u499940289_SiTaRa
+      MYSQL_USER: u499940289_Sitara
       MYSQL_PASSWORD: Sitara@123
     volumes:
       - db_data:/var/lib/mysql
