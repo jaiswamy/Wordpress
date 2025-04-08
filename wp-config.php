@@ -25,7 +25,7 @@ define('DB_USER', 'u499940289_SiTaRa');
 /** MySQL database password */
 define('DB_PASSWORD', 'Sitara@123');
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'db:3306');
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
