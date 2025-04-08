@@ -25,5 +25,18 @@ services:
       MYSQL_DB: u499940289_sitara
       MYSQL_USER: u499940289_SiTaRa
       MYSQL_PASSWORD: Sitara@123
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/certs:/etc/nginx/certs
+      - ./Wordpress:/var/www/html
+    depends_on:
+      - web
 volumes:
   db_data:
