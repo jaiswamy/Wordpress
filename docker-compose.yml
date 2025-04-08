@@ -15,7 +15,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: mysql123
-      MYSQL_DATABASE: u499940289_Sitara
+      MYSQL_DATABASE: u499940289_sitara
       MYSQL_USER: u499940289_SiTaRa
       MYSQL_PASSWORD: Sitara@123
     volumes:
