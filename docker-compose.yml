@@ -13,18 +13,23 @@ services:
 
   web:
     build: .
+    container_name: wordpress_app
     ports:
       - "8081:80"
     volumes:
       - ./Wordpress:/var/www/html
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/conf.d:/etc/mysql/conf.d
     depends_on:
       - db
     environment:
+      CATALINA_OPTS: "-Xms64m -Xmx128m -XX:+UseContainerSupport -XX:MaxRAMPercentage=30.0"
       MYSQL_HOST: db
       MYSQL_PORT: 3306
       MYSQL_DB: u499940289_sitara
       MYSQL_USER: u499940289_SiTaRa
       MYSQL_PASSWORD: Sitara@123
+
 
   nginx:
     image: nginx:latest
